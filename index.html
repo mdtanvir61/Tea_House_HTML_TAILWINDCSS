@@ -9,9 +9,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7a424b1e01.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              fontFamily: {
+                manrope: ["Manrope", "sans-serif"]
+              }      
+            }
+          }
+        }
+      </script>
 
 </head>
-<body>
+<body class="font-manrope">
 
     <!-- Main Container -->
      <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
@@ -256,7 +270,7 @@
 
      <!-- Footer Section -->
     
-     <footer class="bg-[#ffe7e6] text-gray-700 py-10 px-4 md:px-16">
+     <footer class="bg-[#ffe7e6] text-gray-700 py-10 px-4 md:px-16 mx-auto">
 
         <div class="w-9/12 mx-auto">
             <!-- Logo -->
